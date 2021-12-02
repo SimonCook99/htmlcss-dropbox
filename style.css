@@ -72,7 +72,7 @@ nav ul li a{
 .price-container{
     width: 80%;
     margin: 50px auto;
-    height: 170vh;
+    height: 200vh;
     background-color: green;
 }
 
@@ -87,7 +87,7 @@ nav ul li a{
 
 /*classe in comune tra i piani di pagamento*/
 .plan{
-    height: 80vh;
+    height: 120vh;
     width: 30%;
     background-color: yellow;
     display: inline-block;
