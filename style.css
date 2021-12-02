@@ -49,6 +49,15 @@ nav ul li a{
     background-color: #0061ff;
     color: white;
 }
+.btn-white{
+    background-color: white;
+    border: 1px solid grey;
+    color: grey;
+    text-decoration: none;
+    /*per qualche motivo il margin-top non funziona sul bottone, quindi l'ho spostato con position relative*/
+    position: relative;
+    top: 30px;
+}
 
 
 .jumbotron{
@@ -68,7 +77,7 @@ nav ul li a{
 }
 
 .price-title{
-    height: 200px;
+    height: 150px;
     background-color: red;
 }
 .price-title h2{
@@ -107,4 +116,92 @@ nav ul li a{
     height: 300px;
     background-color: yellow;
     margin-top: 50px;
+}
+
+
+/* inzio sessione partner*/
+.partner{
+    width: 80%;
+    margin: 50px auto;
+    height: 80vh;
+    background-color: red;
+    position: relative;
+}
+
+.partner img{
+    width: 50%;
+    margin-top: 20px;
+}
+.partner h2{
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.partner-details{
+    max-width: 40%;
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+}
+
+/* inizio sezione dropbox business*/
+.dropbox-business{
+    width: 80%;
+    margin: 50px auto;
+    height: 220vh;
+    background-color: cyan;
+    text-align: center;
+}
+
+.dropbox-business h2{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.small-container{
+    width: 30%;
+    height: 70vh;
+    background-color: yellow;
+    display: inline-block;
+    margin: 50px 0px;
+}
+
+.aziende-partner{
+    position: relative;
+}
+
+.dropbox-business .aziende-partner h2{
+    text-align: left;
+    width: 60%;
+    margin-top: 120px;
+}
+
+.aziende-partner a{
+    position: absolute;
+    left: 0;
+    margin-top: 20px;
+}
+
+/* inizio sezione designIT*/
+.designIT{
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+}
+
+
+/* inizio sezione FAQ*/
+.FAQ{
+    width: 80%;
+    margin: 50px auto;
+    height: 80vh;
+    background-color: yellowgreen;
+}
+
+/* inizio footer */
+footer{
+    width: 100%;
+    background-color: black;
+    height: 60vh;
 }
