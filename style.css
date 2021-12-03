@@ -48,6 +48,7 @@ nav ul li a{
 .btn-blue{
     background-color: #0061ff;
     color: white;
+    text-decoration: none;
 }
 .btn-white{
     background-color: white;
@@ -60,11 +61,57 @@ nav ul li a{
 }
 
 
+/* inizio jumbotron*/
 .jumbotron{
     width: 100%;
-    height: 500px;
     background-color: #b4d0e7;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
+    padding-top: 70px;
+}
+
+.jumbo-container{
+    width: 80%;
+    margin: auto;
+}
+.jumbo-container:after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.jumbo-container h1{
+    font-size: 65px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.jumbo-container .text-container{
+    width: 30%;
+    float: left;
+    margin-right: 50px;
+    position: relative;
+    top: 40px;
+}
+.jumbo-container .text-container .description{
+    margin-bottom: 30px;
+}
+.text-container p{
+    margin-top: 10px;
+}
+.text-container i{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.img-container{
+    width: 60%;
+    margin-left: 30px;
+    float: left;
+    position: relative;
+    top: 50px;
+}
+.img-container img{
+    max-width: 100%;
 }
 
 
