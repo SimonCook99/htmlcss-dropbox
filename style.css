@@ -52,8 +52,8 @@ nav ul li a{
 }
 .btn-white{
     background-color: white;
-    border: 1px solid grey;
-    color: grey;
+    border: 1px solid black;
+    color: black;
     text-decoration: none;
     /*per qualche motivo il margin-top non funziona sul bottone, quindi l'ho spostato con position relative*/
     position: relative;
@@ -119,25 +119,106 @@ nav ul li a{
 .price-container{
     width: 80%;
     margin: 50px auto;
-    height: 200vh;
-    background-color: green;
+    height: 270vh;
 }
 
 .price-title{
     height: 150px;
-    background-color: red;
 }
 .price-title h2{
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 50px;
 }
+
+.opzione-abbonamento{
+    display: inline-block;
+    margin-right: 20px;
+}
+.opzione-abbonamento a{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.opzione-abbonamento .input-selezionato{
+    border: 5px solid #0160FF;
+    border-radius: 50%;
+}
+.opzione-abbonamento .input-non-selezionato{
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
 
 /*classe in comune tra i piani di pagamento*/
 .plan{
-    height: 120vh;
     width: 30%;
-    background-color: yellow;
     display: inline-block;
+    border: 1px solid grey;
+
+    /*Altezza fissa del contenitore così da dare una distanza fissa dalla lista finale dei piani */
+    height: 180vh;
+}
+
+.user-type{
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+
+.offer-description{
+    width: 80%;
+    margin: 40px auto;
+}
+
+.offer-description h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+p.price{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.offer-description .delay{
+    color: grey;
+    white-space: nowrap; /*In questo modo il testo non va accapo*/
+}
+
+.offer-details{
+    margin-top: 50px;
+}
+.offer-details ul li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+.offer-details .btn-blue{
+    display: block;
+    margin-top: 50px;
+    padding: 10px 30px;
+    white-space: nowrap;
+}
+.offer-details p{
+    margin-top: 20px;
+}
+
+.grey-line{
+    width: 30%;
+    height: 30px;
+    border-bottom: 1px solid grey;
+}
+
+.offer-summary{
+    margin-top: 40px;
+}
+.offer-summary h4{
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+.offer-summary i{
+    color: #0061ff;
 }
 
 .professional{
@@ -182,6 +263,9 @@ nav ul li a{
 .partner h2{
     margin-bottom: 20px;
     font-weight: 600;
+}
+.partner p{
+    line-height: 25px;
 }
 
 .partner-details{
