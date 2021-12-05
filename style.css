@@ -116,6 +116,7 @@ nav ul li a{
 
 
 /*inizio main*/
+/*inizio sezione prezzi*/
 .price-container{
     width: 80%;
     margin: 50px auto;
@@ -177,6 +178,9 @@ nav ul li a{
 .offer-description h3{
     font-size: 25px;
     margin-bottom: 20px;
+
+    /* Per il piano enterprise*/
+    display: inline-block;
 }
 p.price{
     font-weight: bold;
@@ -239,12 +243,33 @@ p.price{
     clear: both;
 }
 
-.enterprise-plan{
+/*gesionte piano enterprise*/
+.enterprise{
     width: 100%;
-    height: 300px;
-    background-color: yellow;
+    height: 270px;
     margin-top: 50px;
 }
+
+.enterprise.plan .offer-description{
+    width: 95%;
+    margin: 40px auto;
+}
+.enterprise.plan .offer-description h4{
+    margin-bottom: 40px;
+}
+.enterprise.plan .offer-description a.btn-blue{
+    float: right;
+    padding: 6px 75px;
+}
+
+/*clearfix per la gestione corretta del bottone sull'enterprise plan*/
+.offer-description:after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/*fine sezione prezzi*/
 
 
 /* inzio sessione partner*/
@@ -252,7 +277,6 @@ p.price{
     width: 80%;
     margin: 50px auto;
     height: 80vh;
-    background-color: red;
     position: relative;
 }
 
@@ -262,7 +286,7 @@ p.price{
 }
 .partner h2{
     margin-bottom: 20px;
-    font-weight: 600;
+    font-weight: 700;
 }
 .partner p{
     line-height: 25px;
@@ -275,27 +299,40 @@ p.price{
     top: 100px;
     right: 50px;
 }
+/*fine sezione partner*/
+
 
 /* inizio sezione dropbox business*/
 .dropbox-business{
     width: 80%;
     margin: 50px auto;
     height: 220vh;
-    background-color: cyan;
     text-align: center;
 }
 
 .dropbox-business h2{
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 700;
+    text-align: left;
 }
 
 .small-container{
     width: 30%;
-    height: 70vh;
-    background-color: yellow;
     display: inline-block;
-    margin: 50px 0px;
+    margin: 50px 25px 50px 0px;
+}
+
+.small-container img{
+    width: 100%;
+    display: block;
+}
+.small-container h3{
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.small-container p{
+    text-align: left;
 }
 
 .aziende-partner{
@@ -306,6 +343,7 @@ p.price{
     text-align: left;
     width: 60%;
     margin-top: 120px;
+    font-weight: 700;
 }
 
 .aziende-partner a{
