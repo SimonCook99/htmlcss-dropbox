@@ -119,7 +119,6 @@ nav ul li a{
 .price-container{
     width: 80%;
     margin: 50px auto;
-    height: 270vh;
 }
 
 .price-container:after{
@@ -311,7 +310,6 @@ p.price{
 .dropbox-business{
     width: 80%;
     margin: 50px auto;
-    height: 220vh;
     text-align: center;
 }
 
@@ -385,7 +383,7 @@ p.price{
 }
 .squares-container .content-center{
     width: calc(100% - 60vw);
-    background-color: green;
+    background-color: #f5f5f5;
     height: 100%;
     float: left;
 }
@@ -431,11 +429,60 @@ p.price{
     background-color: #ffd830;
 }
 
+
+.content-center .text-container{
+    width: 80%;
+    height: 80%;
+    margin: 40px auto;
+}
+.content-center .text-container img{
+    width: 30%;
+}
+.content-center .text-container p{
+    margin-bottom: 40px;
+}
+.content-center .text-container .grey-line{
+    width: 15%;
+    border-color: #e6e6e7;
+    margin-bottom: 40px;
+}
+
+
 .final-business{
     width: 100%;
     height: 45%;
     background-color: #b4d0e7;
+    position: relative;
 }
+
+.final-business .content{
+    width: 70%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.final-business .content h2{
+    color: #61082b;
+    font-weight: 700;
+    font-size: 40px;
+    width: 55%;
+    float: left;
+}
+.content a.btn-white{
+    float: right;
+    border: 0;
+    padding: 6px 50px;
+}
+
+/* clearfix per il div contenitore nella sezione finale di designIT*/
+.content:after{
+    display: table;
+    clear: both;
+    content: "";
+}
+/* Fine sezione designIT*/
 
 
 
@@ -443,10 +490,53 @@ p.price{
 /* inizio sezione FAQ*/
 .FAQ{
     width: 80%;
-    margin: 50px auto;
-    height: 80vh;
-    background-color: yellowgreen;
+    margin: 70px auto;
 }
+
+.FAQ h3{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 40px 0px;
+}
+
+.FAQ .grey-line.questions-row{
+    width: 100%;
+    padding-bottom: 40px;
+}
+.FAQ .question h4{
+    padding-top: 40px;
+    float: left;
+}
+.FAQ .question i{
+    float: right;
+    padding-top: 40px;
+}
+
+/*non so perchè questo clearfix non fuunziona, ho dovuto per forza mettere un div vuoto di classe clearfix (rigo 463)*/
+.question:after{
+    clear: both;
+    display: table;
+    content: "";
+}
+
+
+/*inizialmente saranno invisibili sia il paragrafo che la freccia in su */
+.FAQ .question p, .FAQ .question .fa-chevron-up{
+    display: none;
+    padding-top: 40px;
+}
+
+/* mostriamo questi 2 elementi dopo l'hover col mouse*/
+.question:hover p, .question:hover .fa-chevron-up{
+    display: inline-block;
+}
+/* nascondiamo la freccia in basso, in seguito all'hover del mouse*/
+.question:hover .fa-chevron-down{
+    display: none;
+}
+/* fine sezione FAQ*/
+
+
 
 /* inizio footer */
 footer{
