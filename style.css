@@ -100,6 +100,7 @@ nav ul li a{
 .text-container i{
     margin-top: 30px;
     font-size: 30px;
+    color: black;
 }
 
 .img-container{
@@ -148,7 +149,7 @@ nav ul li a{
 }
 
 .opzione-abbonamento .input-selezionato{
-    border: 5px solid #0160FF;
+    border: 4px solid #0160FF;
     border-radius: 50%;
 }
 .opzione-abbonamento .input-non-selezionato{
@@ -456,7 +457,7 @@ p.price{
 }
 
 .final-business .content{
-    width: 70%;
+    width: 80%;
     margin: auto;
     position: absolute;
     top: 50%;
@@ -466,7 +467,7 @@ p.price{
 .final-business .content h2{
     color: #61082b;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 45px;
     width: 55%;
     float: left;
 }
@@ -512,7 +513,7 @@ p.price{
     padding-top: 40px;
 }
 
-/*non so perchè questo clearfix non fuunziona, ho dovuto per forza mettere un div vuoto di classe clearfix (rigo 463)*/
+/*non so perchè questo clearfix non fuunziona, ho dovuto per forza mettere un div vuoto di classe clearfix (rigo 469)*/
 .question:after{
     clear: both;
     display: table;
@@ -542,5 +543,51 @@ p.price{
 footer{
     width: 100%;
     background-color: black;
-    height: 60vh;
+    margin-top: 120px;
 }
+
+footer .list-container{
+    width: 80%;
+    margin-left: 100px;
+    height: 70%;
+    padding-top: 100px;
+}
+
+footer .list-container:after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+footer .footer-section{
+    float: left;
+    width: 20%;
+    color: white;
+}
+footer .footer-section li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+footer .footer-section h3{
+    margin-bottom: 20px;
+}
+
+footer .grey-line{
+    margin: 50px 0px 50px 100px;
+    width: 10%;
+}
+
+footer .language-selection{
+    color: grey;
+    margin-left: 100px;
+    padding-bottom: 50px;
+}
+
+/* hover sul footer, e sulla navbar iniziale*/
+footer ul li:hover, header ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* fine footer */
