@@ -11,6 +11,7 @@ body{
 /*header e nav iniziali*/
 header{
     width: 100%;
+    height: 100px;
 }
 
 .sidebar-left{
@@ -20,6 +21,10 @@ header{
 
 .sidebar-right{
     float: right;
+}
+
+header ul li:hover{
+    border-bottom: 3px solid black;
 }
 
 #logo{
@@ -44,6 +49,11 @@ nav ul li a{
     padding: 6px 18px;
 }
 
+/* effetto ombreggiatura a tutti i bottoni */
+.button:hover{
+    box-shadow: 2px 2px 10px black;
+}
+
 .btn-blue{
     background-color: #0061ff;
     color: white;
@@ -66,6 +76,7 @@ nav ul li a{
     background-color: #b4d0e7;
     margin-bottom: 200px;
     padding-top: 70px;
+    margin-top: 3px;
 }
 
 .jumbo-container{
@@ -403,7 +414,7 @@ p.price{
     
 }
 
-/*differenziazione dei vari color dei quadrati*/
+/*differenziazione dei vari colori dei quadrati*/
 .squares-container .square.green{
     background-color: #a2d39b;
     border: 10px solid #d0e9cd;
@@ -513,7 +524,7 @@ p.price{
     padding-top: 40px;
 }
 
-/*non so perchè questo clearfix non fuunziona, ho dovuto per forza mettere un div vuoto di classe clearfix (rigo 469)*/
+/*non so perchè questo clearfix non funziona, ho dovuto per forza mettere un div vuoto di classe clearfix (rigo 469)*/
 .question:after{
     clear: both;
     display: table;
@@ -584,8 +595,8 @@ footer .language-selection{
     padding-bottom: 50px;
 }
 
-/* hover sul footer, e sulla navbar iniziale*/
-footer ul li:hover, header ul li:hover{
+/* hover sul footer*/
+footer ul li:hover{
     text-decoration: underline;
     cursor: pointer;
 }
