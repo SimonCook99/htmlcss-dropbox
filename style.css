@@ -12,6 +12,11 @@ body{
 header{
     width: 100%;
     height: 100px;
+    background-color: white;
+
+    position: fixed;
+    top: 0;
+    z-index: 9;
 }
 
 .sidebar-left{
@@ -23,8 +28,34 @@ header{
     float: right;
 }
 
+/*effetto hover generico degli elementi header*/
 header ul li:hover{
     border-bottom: 3px solid black;
+}
+
+header ul li .sottomenù{
+    display: none;
+    width: 20vw;
+    position: absolute;
+    top: 103px;
+    left: 0;
+    background-color: white;
+}
+
+ul.sottomenù li {
+    padding: 15px 0px;
+}
+
+/*effetto hover specifico per l'elemento strutturato che contiene il sottomenù*/
+header ul li.elemento-strutturato:hover .sottomenù{
+    display: inline-block;
+    margin: 0;
+}
+
+header ul.sottomenù li:hover{
+    width: 100%;
+    background-color: lightgray;
+    border: 0;
 }
 
 #logo{
@@ -37,6 +68,7 @@ nav{
 nav ul li{
     display: inline-block;
     margin: 0px 20px;
+    position: relative;
 }
 nav ul li a{
     line-height: 100px;
@@ -76,7 +108,7 @@ nav ul li a{
     background-color: #b4d0e7;
     margin-bottom: 200px;
     padding-top: 70px;
-    margin-top: 3px;
+    margin-top: 103px;
 }
 
 .jumbo-container{
@@ -446,6 +478,7 @@ p.price{
     width: 80%;
     height: 80%;
     margin: 40px auto;
+    overflow-y: auto;
 }
 .content-center .text-container img{
     width: 30%;
