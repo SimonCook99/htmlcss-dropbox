@@ -38,18 +38,18 @@ header ul li .sottomenù{
     width: 20vw;
     position: absolute;
     top: 103px;
-    left: 0;
+    left: -20px;
     background-color: white;
 }
 
 ul.sottomenù li {
-    padding: 15px 0px;
+    padding: 20px;
+    margin: 0;
 }
 
 /*effetto hover specifico per l'elemento strutturato che contiene il sottomenù*/
 header ul li.elemento-strutturato:hover .sottomenù{
     display: inline-block;
-    margin: 0;
 }
 
 header ul.sottomenù li:hover{
